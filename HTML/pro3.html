@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body >
+
+
+   <div>
+    <img src="D:\pro2\123.jpg" alt="123" style =" background-size:cover; width:1360px; height:600px; margin: 0px; padding: 0px;"> 
+   
+ 
+  <div class="signin">
+    <form name="myform" method="post" onsubmit="return validpassword()" action="pro3.2.html">
+
+      <h2> ME & MINE</h2>
+      <input type="text" placeholder="Enter Username">
+      <input type="text" placeholder="Enter Password" name="pass1">
+      <button class="btn">SIGN IN</button>
+    </form>
+        
+<P> Not yet registered?</P>
+<a href="sign.html">SIGN UP</a>
+
+
+ 
+    
+      
+<script
+src="http://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script>
+    function validpassword(){
+var password=document.myform.pass1.value;
+var cpassword=document.myform.pass2.value;
+
+if(password.length<6){
+    alert("password must contain 6 charectors");
+    return false;
+}
+if (password==cpassword){
+    return true;
+}else
+alert("password & and confirm password must be same");
+return false;
+    }
+</script>  
+
+  </div>
+ 
+
+</div>
+
+ </body>
+</html>
+
+
+
+
+
+
+ 

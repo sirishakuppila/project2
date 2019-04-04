@@ -1,0 +1,142 @@
+html,body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    width: 100%;
+   
+    background: url(1234.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.content{
+    width:90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0cm;
+    text-align: justify;
+}
+.logo {
+    position:fixed;
+    float:left;
+    margin:16px 36px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 24px;
+    }
+nav{
+    position:fixed;
+    width:100%;
+}
+nav ul{
+    list-style:none;
+    background: rgba(0,0,0,0);
+    overflow:hidden;
+    color:#fff;
+    padding:0;
+    text-align:center;
+    margin:0;
+    transition:1s;
+}
+nav.black ul{
+    background: #000;
+}
+nav ul li{
+    display:inline-block;
+    padding:20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+}
+.menu-icon{
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding:15px 24px;
+    cursor:pointer;
+    color:#fff;
+    display:none;
+}
+@media(max-width:580px){
+    .logo{
+        position:fixed;
+        top:0;
+        margin-top:16px;
+    }
+    nav ul{
+        max-height:0px;
+        background:#000;
+    }
+    nav.black ul{
+        background: #000;
+    }
+    .showing{
+        max-height: 20em;
+    }
+    nav ul li{
+        box-sizing: border-box;
+        width:100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    .menu-icon{
+        display:block;
+    }
+}
+
+
+
+.signin{
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:5px;
+    padding:3em;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+}
+h2{ 
+    margin-top: 0px;
+    font-family:source sans pro;
+    font-weight: lighter;
+    color:#fff;
+    font-size:50px;
+    text-align:center;
+}
+input{
+    display:block;
+    width:320px;
+    height:50px;
+    background: rgba(0,0,0,0.3);
+    outline:none;
+    border:1px solid rgba(0,0,0,0.5);
+    font-family:source sans pro;
+    font-weight: lighter;
+    font-size:14px;
+    margin-bottom:10px;
+    padding-left:10px;
+    border-radius:5px;
+}
+button{
+    width:332px;
+    height:50px;
+    font-size:16px;
+    background: #000;
+    font-weight:lighter;
+    color:#fff;
+    border:0px;
+    border-radius:5px;
+}
+
+
+
+
+
+
